@@ -16,4 +16,4 @@ num1 = int(raw_input())
 # Calculate fahrenheit
 ancer = ((num1 * 9) / 5) + 32
 # Output answer
-print "the equivilent fahrenheit temprature is" + str(ancer)
+print "the equivilent fahrenheit temprature is " + str(ancer)
