@@ -30,16 +30,19 @@ while (patients == 1):
     print "1 = yes, 0 = no"
     westAfrica = int(raw_input())    
     if temp > 105:
+# - A temperature of over 105F
         print "you shuld go to the hospital"
         patients = patients - 1
+# - A temperature of over 102F and they have been sick in the last 24 hours
     elif temp > 102 and sick == 1:
         print "you Shuld go to the hospital"
         patients = patients - 1
+# - A temperature over 100, OR they've been sick in the last 24 hours, AND they've recently travelled to West Africa.
     elif temp > 100 or sick == 1 and westAfrica == 1:
         print "you need to go to the hospital"
         patients = patients - 1
         
 # Criteria for Diagnosis:
-# - A temperature of over 105F
-# - A temperature of over 102F and they have been sick in the last 24 hours
-# - A temperature over 100, OR they've been sick in the last 24 hours, AND they've recently travelled to West Africa.
+
+
+
